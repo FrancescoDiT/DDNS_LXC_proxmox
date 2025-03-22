@@ -37,6 +37,11 @@ If you don't have curl installed:
 ```bash
 apt install curl
 ```
+If you don't have jq installed:
+
+```bash
+apt install jq
+```
 
 And create a file wherever you want (if you want to save the template create two files):
 
