@@ -1,7 +1,9 @@
 # Creating a container LXC with docker inside
 ## **REQUIREMENTS**
-* **OS**: a Debian template (you can find it by clicking the button "Templates" in *Datacenter* **>** *your_node_name* **>** *local(your_node_name)* **>** *CT Templates*) 
-
+* **OS**: a Debian template (you can find it by clicking the button "Templates" in *Datacenter* **>** *your_node_name* **>** *local(your_node_name)* **>** *CT Templates*)
+* * **CPU**: 1 core
+* * **Memory**: 128MB
+* * **Bootdisk**: 2GB
 (I'm using *debian-12-standard_12.7-1_amd64.tar.zst*).
 
 * A public domain (I'm using a [cloudflare](https://www.cloudflare.com/ "cloudflare official site") domain).
