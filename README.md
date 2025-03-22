@@ -5,9 +5,9 @@
 (I'm using *debian-12-standard_12.7-1_amd64.tar.zst*).
 
 * **Container Hardware**
- * **CPU**: 1 core
- * **Memory**: 128MB
- * **Bootdisk**: 2GB
+  * **CPU**: 1 core
+  * **Memory**: 128MB
+  * **Bootdisk**: 2GB
 
 * A public domain (I'm using a [cloudflare](https://www.cloudflare.com/ "cloudflare official site") domain).
 
