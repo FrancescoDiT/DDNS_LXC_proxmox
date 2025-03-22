@@ -41,7 +41,7 @@ apt install curl
 And create a file wherever you want (if you want to save the template create two files):
 
 ```bash
-nano /path/to/cloudflare-template.sh
+nano ./cloudflare-template.sh
 ```
 
 Copy this script in it (or in both if you want to save the template), and insert all the required data:
