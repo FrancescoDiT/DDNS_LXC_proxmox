@@ -17,7 +17,12 @@
 
 Go to your domain provider page and look up for the *create subdomain* section, probably under the *DNS* section, then create a subdomain.
 
-Give it a **Name**, set the **Content** to a random ip value (i.e. 8.8.8.8), **Proxy Status** in *DNS only*, **TTL** in *auto*, and then save it.
+**create subdomain table structure**
+* **Name**: give it a name (i.e. ddns),
+* **Content**: set to a random ip value (i.e. 8.8.8.8),
+* **Proxy Status**: *DNS only*,
+* **TTL**: *auto*,
+Save it.
 
 ### 2. Set script data and autorun it
 
