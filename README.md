@@ -95,7 +95,7 @@ add this row in crontab:
 
 ```ini
 #this script runs every minute, but you can adjust it as you prefer
-* * * * * * /path/to/cloudflare-template.sh
+* * * * * ~/cloudflare-template.sh
 ```
 
 then save and exit, and that's it!
