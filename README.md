@@ -29,7 +29,7 @@ Save it.
 On Proxmox, enter you Debian LXC container console and update and upgrade your container:
 
 ```bash
-apt update && upgrade -y
+apt update && apt upgrade -y
 ```
 
 If you don't have curl installed:
