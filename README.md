@@ -17,7 +17,7 @@
 
 Go to your domain provider page and look up for the *create subdomain* section, probably under the *DNS* section, then create a subdomain.
 
-**create subdomain table structure**
+**subdomain table structure**
 * **Name**: give it a name (i.e. ddns),
 * **Content**: set to a random ip value (i.e. 8.8.8.8),
 * **Proxy Status**: *DNS only*,
@@ -26,14 +26,7 @@ Save it.
 
 ### 2. Set script data and autorun it
 
-On Proxmox, enter you Debian LXC container console and create a file wherever you want:
-
-```bash
-#if you want to save the template create two files
-nano /path/to/cloudflare-template.sh
-```
-
-update and upgrade your container:
+On Proxmox, enter you Debian LXC container console and update and upgrade your container:
 
 ```bash
 apt update && upgrade -y
@@ -45,13 +38,19 @@ If you don't have curl installed:
 apt install curl
 ```
 
+And create a file wherever you want (if you want to save the template create two files):
+
+```bash
+nano /path/to/cloudflare-template.sh
+```
+
 Copy this script in it (or in both if you want to save the template), and insert all the required data:
 
 ```ini
-auth_email="YOUR_AUTH_EMAIL" #required
+auth_email="YOUR_AUTH_EMAIL" #required, the email of your cloudflare account
 auth_method="global"
-auth_key="YOUR_AUTHorAPI_KEY" #required
-zone_identifier="YOUR_ZONE_IDENTIFIER" #required
+auth_key="YOUR_AUTHorAPI_KEY" #required, in the overview page there is a link to it, follow the steps
+zone_identifier="YOUR_ZONE_IDENTIFIER" #required, you can find it in the "overview" page
 record_name="subdomain.domain.com" #required
 ttl=3600
 
